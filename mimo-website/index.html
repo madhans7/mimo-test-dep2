@@ -1,0 +1,47 @@
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>MIMO</title>
+      <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+      <meta name="google-adsense-account" content="ca-pub-6488030243565665">
+      <script src="https://sdk.cashfree.com/js/v3/cashfree.js"></script>
+
+      <!-- Sentry Loader Script -->
+      <script
+        src="https://js.sentry-cdn.com/88df077295dbd20d7fcbf7f44978832b.min.js"
+        crossorigin="anonymous"
+      ></script>
+      <script>
+        Sentry.onLoad(function() {
+          Sentry.init({
+            // Tracing
+            tracesSampleRate: 1.0, 
+            // Session Replay
+            replaysSessionSampleRate: 0.1, 
+            replaysOnErrorSampleRate: 1.0, 
+          });
+        });
+      </script>
+
+      <!-- Google AdSense -->
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6488030243565665"
+     crossorigin="anonymous"></script>
+
+      <!-- Google tag (gtag.js) -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZCCSM6N4QF"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-ZCCSM6N4QF');
+      </script>
+    </head>
+
+    <body>
+      <div id="root"></div>
+      <script type="module" src="/src/main.tsx"></script>
+    </body>
+  </html>

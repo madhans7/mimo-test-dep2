@@ -1,3 +1,4 @@
+# Android ignores
 *.iml
 .gradle
 /local.properties
@@ -13,3 +14,20 @@
 .externalNativeBuild
 .cxx
 local.properties
+
+# Web/Node ignores
+node_modules/
+dist/
+build/
+*.zip
+
+# Environment files (contain secrets — never commit)
+.env
+.env.*
+**/.env
+**/.env.*
+
+# Sensitive credential files
+**/serviceAccountKey.json
+serviceAccountKey.json
+backend/mimo-v2-11868-firebase-adminsdk-fbsvc-f4edf52a06.json
