@@ -50,7 +50,7 @@ html {
     justify-content: center;
     overflow: hidden;
     position: relative;
-    background: #093765;
+    background: var(--amber-mid);
 }
 
 body {
@@ -58,7 +58,7 @@ body {
     -webkit-font-smoothing: antialiased;
     width: 100%;
     height: 100%;
-    background: #093765;
+    background: var(--amber-mid);
     overflow: hidden;
     position: relative;
     flex-shrink: 0;
@@ -75,7 +75,7 @@ body {
 #root {
     width: 1440px;
     height: 810px;
-    background: #093765;
+    background: url('./assets/kiosk-bg.png') center center / cover no-repeat, var(--amber-mid);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1184,4 +1184,17 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+}
+
+/* ================================================
+   DYNAMIC KIOSK THEMES
+   ================================================ */
+
+html[data-kiosk="CV-001"],
+html[data-kiosk="CV-001"] body {
+    background: #093765 !important;
+}
+
+html[data-kiosk="CV-001"] #root {
+    background: #093765 !important;
 }
