@@ -26,7 +26,7 @@ export default defineConfig({
               '/refund-policy'
             ];
             if (url === '/' || url === '/landing') {
-              req.url = '/index.html';
+              req.url = '/app.html';
             } else if (url === '/blog') {
               req.url = '/blog.html';
             } else if (url && url.startsWith('/blog/')) {

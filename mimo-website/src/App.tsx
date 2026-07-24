@@ -18,6 +18,9 @@ import { BlankPages } from "./app/pages/blank-pages";
 import { DirectSuccess } from "./app/pages/direct-success";
 import AdminDashboard from "./app/pages/mimo-admin-dashboard";
 import { TextEditor } from "./app/pages/text-editor";
+import { KioskHome } from "./app/pages/kiosk-home";
+import { KioskEnterCode } from "./app/pages/kiosk-enter-code";
+import { KioskPrinting } from "./app/pages/kiosk-printing";
 
 export default function App() {
   const [showSplash, setShowSplash] = useState(false);
@@ -74,7 +77,9 @@ export default function App() {
 
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Login />} />
+          <Route path="/" element={<KioskHome />} />
+          <Route path="/kiosk/enter-code" element={<KioskEnterCode />} />
+          <Route path="/kiosk/printing" element={<KioskPrinting />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/upload" element={<UploadFile />} />
